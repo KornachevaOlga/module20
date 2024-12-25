@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать в мир сказки и реальности!</title>
+    <style>
+        body {
+            background-color: #f0e68c; /* Цвет фона */
+            color: #333; /* Цвет текста */
+            font-family: Arial, sans-serif; /* Шрифт */
+            text-align: center; /* Выравнивание текста по центру */
+            height: 100vh; /* Высота страницы */
+            display: flex;
+            flex-direction: column; /* Вертикальное выравнивание */
+        }
+        h1 {
+            color: #ff6347; /* Цвет заголовка */
+        }
+        p {
+            font-size: 1.2em; /* Размер шрифта для параграфов */
+            margin: 20px 0; /* Отступы сверху и снизу */
+        }
+        .btn {
+            background-color: #4CAF50; /* Цвет кнопки */
+            color: white; /* Цвет текста на кнопке */
+            border: none; /* Убираем рамку */
+            padding: 15px 32px; /* Отступы внутри кнопки */
+            text-align: center; /* Выравнивание текста на кнопке */
+            text-decoration: none; /* Убираем подчеркивание */
+            display: inline-block; /* Делаем кнопку блочным элементом */
+            font-size: 16px; /* Размер шрифта на кнопке */
+            margin: 4px 2px; /* Отступы вокруг кнопки */
+            cursor: pointer; /* Курсор при наведении */
+            border-radius: 8px; /* Закругленные углы кнопки */
+        }
+        .btn:hover {
+            background-color: #45a049; /* Цвет кнопки при наведении */
+        }
+        .image-container {
+            flex: 1; /* Занимает оставшееся пространство */
+            display: flex;
+            justify-content: center; /* Центрируем изображение по горизонтали */
+            align-items: center; /* Центрируем изображение по вертикали */
+            background-image: url('{% static "images/your_image.jpg" %}'); /* Путь к изображению */
+            background-size: cover; /* Масштабируем изображение */
+            background-position: center; /* Центрируем изображение */
+        }
+    </style>
+    {% load static %} <!-- Загрузка статических файлов -->
+</head>
+<body>
+    {{username}}
+    <h1>Вы попали на необыкновенную страницу!</h1>
+    <p>В мир сказки и реальности, где стираются границы между возможным и невозможным. Здесь каждый миг наполнен волшебством</p>
+    <p>Погрузитесь в мир, где мечты становятся реальностью, а ваше воображение — единственным ограничением.</p>
+    <p>Не бойтесь мечтать и пусть эта страница станет началом вашего удивительного приключения в мире, где все возможно.</p>
+    <menu>
+        {% block menu %}
+        <form action="http://127.0.0.1:8000/product_list/" target="_self">
+            <button class="btn">Узнать больше о животных</button>
+        </form>
+        {% endblock %}
+    </menu>
+    <div class="image-container"></div> <!-- Контейнер для изображения -->
+</body>
+</html>

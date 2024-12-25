@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% if user.is_authenticated %}
+        <p>Здравствуйте, {{ user.username }}!</p>
+    {% else %}
+        <p>Войдите, пожалуйста, под своей учетной записью.</p>
+    {% endif %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все животные, которые могут стать твоими!</title>
+    <style>
+        body {background-color: #f0e68c; /* Цвет фона */}
+        h1 {color: #ff6347; /* Цвет заголовка */}
+        .btn {background-color: #4CAF50; display: inline-block;}
+    </style>
+</head>
+<body>
+    <h1>Все животные, которые могут стать твоими!</h1>
+    <ul>
+        {% for product in products %}
+            <li>
+                <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a> - ${{ product.price }}
+            </li>
+        {% endfor %}
+    </ul>
+<menu>
+    {%block menu%}
+
+
+    <form action="http://127.0.0.1:8000/register/" target="_self"><button class="btn">Регистраци</button></form>
+
+    <form action="http://127.0.0.1:8000/login/" target="_self"><button class="btn">Вход</button></form>
+    <form action="http://127.0.0.1:8000/login/" target="_self"><button class="btn">Выход</button></form>
+    <form action="http://127.0.0.1:8000/cart/" target="_self"><button class="btn">Корзина</button></form>
+    {%endblock%}
+</menu>
+    <a href='/'>Вернуться</a>
+</body>
+</html>
+
