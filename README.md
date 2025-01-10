@@ -64,3 +64,15 @@ Django лучше всего подходит для создания мощны
 ![image](https://github.com/user-attachments/assets/eaed067b-5414-4d18-a31b-085447256690)
 
 ![image](https://github.com/user-attachments/assets/912cb6cd-35db-48de-8ae4-ea8aa6e1cfa7)
+
+![image](https://github.com/user-attachments/assets/6089cfd8-d4ac-46b0-906f-0b4f15d026cf)
+
+![image](https://github.com/user-attachments/assets/9e2d784a-7912-48e0-a037-9c31bf7c8e86)
+
+![image](https://github.com/user-attachments/assets/5b46d9e8-8207-4705-9cc5-844988ea5b8f)
+
+![image](https://github.com/user-attachments/assets/89d55f8a-39ab-4579-9fe0-e6487d6be73f)
+
+![image](https://github.com/user-attachments/assets/0cec3022-8b58-4fd8-94e4-2a277a05a46f)
+
+![image](https://github.com/user-attachments/assets/03dc997a-73e3-44f8-b759-ec2664ee95e8)
